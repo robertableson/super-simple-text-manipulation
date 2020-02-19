@@ -2,7 +2,12 @@
   <div class="character-replacer-tool">
     
     <h2>Character replacer tool</h2>
-
+    
+    Characters: {{ textareaText.length }} Words: {{ textareaText ? textareaText.split(' ').length: 0 }}
+    
+    <br/>
+    <br/>
+    
     <textarea v-model="textareaText" cols="50" rows="10"></textarea>
     
     <br/>
